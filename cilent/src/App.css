@@ -1,0 +1,65 @@
+/* Center everything at the top */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+/* Form container with tight spacing */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers elements inside */
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* Slight contrast */
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  min-width: fit-content;
+}
+
+/* Labels with inline elements */
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Inputs and select dropdown */
+input, select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+/* Search button */
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background: #535bf2;
+}
+
+/* Add spacing between search results */
+.search-results {
+  margin-top: 1rem; /* Space between form and results */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* Space between each search result */
+}
+
